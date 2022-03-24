@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .container{
+                margin-top: 40px;
+                margin-left: 580px;
+                max-width: 700px;
+            }
+            table {
+                border-collapse: collapse;
+            }
+            td {
+                border: 1px solid black;
+                width: 220px;
+                height: 220px;
+                font-size: 50px;
+                text-align: center;
+            }
+            td > a {
+                font-size: 20px;
+                text-decoration-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="text-align: center;">Tic Tac Toe </h1>
+            <h2 style="text-align: center;"><a href="{{url_for('choose_piece', player=1)}}" style="text-decoration: none;">Play as X</a> | <a href="{{url_for('choose_piece', player=2)}}" style="text-decoration: none;">Play as O</a></h2>
+        </div>
+    </body>
+</html>
